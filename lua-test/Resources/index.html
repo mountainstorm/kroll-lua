@@ -1,0 +1,30 @@
+<html>
+<head><style>body{background-color:#292929;color:white}</style>
+<script type="text/javascript" src="dojo-1.2.3.js"></script>
+
+<script type="text/lua">
+
+print( "Hello from Lua" )
+--current.window.alert("hi, i'm lua")
+--current.window.location.href = "http://www.google.co.uk"
+
+print( "href: "..current.window.location.href )
+
+--current.testluafunc = function( a, b, c )
+--	print( "called: current.testluafunc = function( a, b, c )" )
+--end
+
+current.testtable = { ["peter"]="woot woot", ["roger"]=5 }
+
+print( "done!" )
+</script>
+
+<script type="text/javascript">
+alert( testtable[ "peter" ] );
+</script>
+
+</head>
+<body>
+Welcome to <a onclick="testluafunc( 1, 2, 3 );">Titanium</a> and my pants
+</body>
+</html>
